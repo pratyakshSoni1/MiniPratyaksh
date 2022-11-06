@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Manager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:id="@+id/pageTitleText"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="26dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitleText"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Limit Gaming"
+                    android:textAlignment="textStart"
+                    android:textColor="#222222"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/id_limitGamingSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#48FF91" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Timepass"
+                    android:textAlignment="textStart"
+                    android:textColor="#222222"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/id_TimepassSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#48FF91" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Laptop Charging"
+                    android:textAlignment="textStart"
+                    android:textColor="#222222"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/id_laptopChargeSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#48FF91" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Phone on Charge"
+                    android:textAlignment="textStart"
+                    android:textColor="#222222"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/id_phoneChargeSwicth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#48FF91" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Social Media Scroll"
+                    android:textAlignment="textStart"
+                    android:textColor="#222222"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/id_socialMediaScrollSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#48FF91" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:padding="8dp"
+                    android:paddingStart="16dp"
+                    android:text="Milk on Boil"
+                    android:textAlignment="textStart"
+                    android:textColor="#222222"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingStart="12dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/id_milkOnBoilSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="#FFFFFF"
+                        app:trackTint="#48FF91" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
